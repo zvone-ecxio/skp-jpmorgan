@@ -1,0 +1,4131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+
+        * {
+            text-decoration: none;
+            font-size: 1em;
+            outline: none;
+            margin: 0;
+            padding: 0
+        }
+
+        code, pre, textarea, input, select {
+            font: inherit;
+            white-space: normal
+        }
+
+        a, img, a img, iframe, form, abbr, acronym, object, table, a abbr, a acronym {
+            border-width: 0
+        }
+
+        dfn, cite, address, em {
+            font-style: normal
+        }
+
+        th, td {
+            text-align: left
+        }
+
+        html {
+            background: #FFF;
+            color: #000;
+            line-height: 1;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        html {
+            font-family: sans-serif
+        }
+
+        q {
+            quotes: "\201C" "\201D" "\2018" "\2019"
+        }
+
+        sub, sup {
+            vertical-align: baseline
+        }
+
+        img {
+            border: none;
+            margin: 0
+        }
+
+        body {
+            background-color: transparent
+        }
+
+        tr, th, td {
+            width: auto;
+            height: auto;
+            vertical-align: inherit;
+            border: none
+        }
+
+        table[border], .content table[border] {
+            border-collapse: separate;
+            border-spacing: 0
+        }
+
+        html {
+            font-size: 125%
+        }
+
+        body {
+            font-size: 50%
+        }
+
+        strong, th, thead td, h1, h2, h3, h4, h5, dt {
+            font-weight: 700
+        }
+
+        cite, em, dfn {
+            font-style: italic
+        }
+
+        pre, input[type='text'], input[type='password'], textarea {
+            font-size: 100%;
+            font-family: mono-space, monospace
+        }
+
+        pre {
+            white-space: pre
+        }
+
+        pre * {
+            font-size: 100%;
+            white-space: pre
+        }
+
+        del {
+            text-decoration: line-through
+        }
+
+        ins, dfn {
+            border-bottom: 1px solid #000
+        }
+
+        small, sup, sub {
+            font-size: 85%
+        }
+
+        big {
+            font-size: 125%;
+            line-height: 80%
+        }
+
+        abbr, acronym {
+            text-transform: uppercase;
+            font-size: 85%;
+            letter-spacing: .1em
+        }
+
+        abbr[title], acronym[title], dfn[title] {
+            cursor: help;
+            border-bottom: 1px dotted #000
+        }
+
+        sup {
+            vertical-align: super
+        }
+
+        sub {
+            vertical-align: sub
+        }
+
+        blockquote {
+            padding-left: 2.2em
+        }
+
+        input, select {
+            cursor: pointer
+        }
+
+        input[type='text'] {
+            cursor: text
+        }
+
+        input[type='hidden'] {
+            display: none
+        }
+
+        .content {
+            font-size: 1.2em;
+            line-height: 1.6em
+        }
+
+        .content h1 {
+            line-height: 1;
+            margin: 1em 0 .5em
+        }
+
+        .content h2 {
+            line-height: 1;
+            margin: 1.07em 0 .535em
+        }
+
+        .content h3 {
+            line-height: 1
+        }
+
+        .content h4 {
+            line-height: 1;
+            margin: 1.23em 0 .615em
+        }
+
+        .content h5 {
+            line-height: 1;
+            margin: 1.33em 0 .67em
+        }
+
+        .content ul {
+            list-style: disc outside
+        }
+
+        .content ol {
+            list-style: decimal outside
+        }
+
+        .content table {
+            border-collapse: collapse
+        }
+
+        .content p, .content ul, .content ol, .content dl, .content pre, .content address, .content table, .content form {
+            margin-bottom: 1.6em
+        }
+
+        .content p + p {
+            margin-top: -.8em
+        }
+
+        .content textarea, .content input[type='text'] {
+            padding: .1em .2em
+        }
+
+        .content input {
+            padding: .1em .2em
+        }
+
+        .content select[multiple] {
+            margin-bottom: .8em
+        }
+
+        .content input[type='radio'] {
+            position: relative;
+            bottom: -.2em
+        }
+
+        .content dt {
+            margin-top: .8em;
+            margin-bottom: .4em
+        }
+
+        .content ul, .content ol {
+            margin-left: 2.2em
+        }
+
+        .content ul ul, content ol ul, .content ul ol, content ol ol {
+            margin-bottom: 0
+        }
+
+        blockquote {
+            color: #666
+        }
+
+        blockquote > *:first-child:before {
+            content: "\201C";
+            font-size: 2.5em;
+            margin-left: -.62em;
+            font-family: georgia, serif;
+            padding-right: .2em;
+            color: #aaa;
+            line-height: 0
+        }
+
+        abbr[title], acronym[title], dfn[title] {
+            border-bottom: 1px solid #ccc
+        }
+
+        ins, dfn {
+            border-bottom-color: #666
+        }
+
+        del {
+            color: #666
+        }
+
+        textarea, input[type='text'], input[type='password'], select {
+            border: 1px solid #ccc;
+            background: #fff
+        }
+
+        textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover {
+            border-color: #aaa
+        }
+
+        textarea:focus, input[type='text']:focus, input[type='password']:focus, select:focus {
+            outline: 2px solid #e4e4e4;
+            border-color: #888
+        }
+
+        .content table {
+        }
+
+        * {
+            font-size: 11px;
+            line-height: 1em
+        }
+
+        input.submitButton {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1628px;
+            border: none;
+            width: 74px;
+            height: 32px;
+            font-weight: bold;
+            color: #333
+        }
+
+        input.submitButton:hover {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1732px;
+        }
+
+        * {
+            font-size: 11px;
+            line-height: 1em
+        }
+
+        input.submitButton {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1628px;
+            border: none;
+            width: 74px;
+            height: 32px;
+            font-weight: bold;
+            color: #333
+        }
+
+        input.submitButton:hover {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1732px;
+        }
+
+        .dataBox {
+            background: #efefef url(https://test.ppipe.net/hpp/resource/image/groupingBackground.png) repeat-x right top;
+            padding: 0px 1em 1.6em 0;
+            margin: 0px 0px 5px 0px;
+        }
+
+        .default_userInformation {
+            padding-left: 4px
+        }
+
+        .default_orderAmount {
+            font-weight: bold;
+            font-size: 16px
+        }
+
+        .default_cardSeparator {
+            border: none;
+            border-bottom: 1px dotted #00a5db;
+            margin: 5px 0 10px 0
+        }
+
+        input.inputError {
+            border: 1px solid red
+        }
+
+        input.inputErrorValidation {
+            border: 1px solid red
+        }
+
+        .container_12 span.notification {
+            padding-bottom: 5px;
+            color: red;
+            width: 100%
+        }
+
+        .ui-dialog {
+            padding-right: 0px;
+        }
+
+        .ui-icon-closethick {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -450px;
+            padding: 5px;
+        }
+
+        .ui-icon-gripsmall-diagonal-se {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -536px;
+        }
+
+        .ui-dialog-content {
+            padding: 0.5em 1em 0.3em
+        }
+
+        .ui-dialog .ui-dialog-titlebar {
+            border-bottom: 1px solid #00a5db;
+            margin-bottom: 10px;
+        }
+
+        .default_tooltip {
+            position: absolute;
+            z-index: 3000;
+            border: 1px solid #00a5db;
+            background-color: #ddd;
+            padding: 8px;
+            opacity: 0.8;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px
+        }
+
+        .brandSelectionSliderLine {
+            border-bottom: 1px solid #00a5db
+        }
+
+        .container_12 {
+            width: 92%;
+            margin-left: 4%;
+            margin-right: 4%;
+        }
+
+        .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_7_5, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+            display: inline;
+            float: left;
+            position: relative;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+
+        .alpha {
+            padding-left: 0;
+        }
+
+        .omega {
+            padding-right: 0;
+        }
+
+        .grid_1 {
+            width: 6.333%;
+        }
+
+        .grid_2 {
+            width: 14.667%;
+        }
+
+        .grid_3 {
+            width: 23.0%;
+        }
+
+        .grid_4 {
+            width: 31.333%;
+        }
+
+        .grid_5 {
+            width: 39.667%;
+        }
+
+        .grid_6 {
+            width: 48.0%;
+        }
+
+        .grid_7 {
+            width: 56.333%;
+        }
+
+        .grid_7_5 {
+            width: 60%;
+        }
+
+        .grid_8 {
+            width: 64.667%;
+        }
+
+        .grid_9 {
+            width: 73.0%;
+        }
+
+        .grid_10 {
+            width: 81.333%;
+        }
+
+        .grid_11 {
+            width: 89.667%;
+        }
+
+        .grid_12 {
+            width: 98.0%;
+        }
+
+        .prefix_1 {
+            padding-left: 8.333%;
+        }
+
+        .prefix_2 {
+            padding-left: 16.667%;
+        }
+
+        .prefix_3 {
+            padding-left: 25.0%;
+        }
+
+        .prefix_4 {
+            padding-left: 33.333%;
+        }
+
+        .prefix_5 {
+            padding-left: 41.667%;
+        }
+
+        .prefix_6 {
+            padding-left: 50.0%;
+        }
+
+        .prefix_7 {
+            padding-left: 58.333%;
+        }
+
+        .prefix_8 {
+            padding-left: 66.667%;
+        }
+
+        .prefix_9 {
+            padding-left: 75.0%;
+        }
+
+        .prefix_10 {
+            padding-left: 83.333%;
+        }
+
+        .prefix_11 {
+            padding-left: 91.667%;
+        }
+
+        .suffix_1 {
+            padding-right: 8.333%;
+        }
+
+        .suffix_2 {
+            padding-right: 16.667%;
+        }
+
+        .suffix_3 {
+            padding-right: 25.0%;
+        }
+
+        .suffix_4 {
+            padding-right: 33.333%;
+        }
+
+        .suffix_5 {
+            padding-right: 41.667%;
+        }
+
+        .suffix_6 {
+            padding-right: 50.0%;
+        }
+
+        .suffix_7 {
+            padding-right: 58.333%;
+        }
+
+        .suffix_8 {
+            padding-right: 66.667%;
+        }
+
+        .suffix_9 {
+            padding-right: 75.0%;
+        }
+
+        .suffix_10 {
+            padding-right: 83.333%;
+        }
+
+        .suffix_11 {
+            padding-right: 91.667%;
+        }
+
+        .push_1 {
+            left: 8.333%;
+        }
+
+        .push_2 {
+            left: 16.667%;
+        }
+
+        .push_3 {
+            left: 25.0%;
+        }
+
+        .push_4 {
+            left: 33.333%;
+        }
+
+        .push_5 {
+            left: 41.667%;
+        }
+
+        .push_6 {
+            left: 50.0%;
+        }
+
+        .push_7 {
+            left: 58.333%;
+        }
+
+        .push_8 {
+            left: 66.667%;
+        }
+
+        .push_9 {
+            left: 75.0%;
+        }
+
+        .push_10 {
+            left: 83.333%;
+        }
+
+        .push_11 {
+            left: 91.667%;
+        }
+
+        .pull_1 {
+            left: -8.333%;
+        }
+
+        .pull_2 {
+            left: -16.667%;
+        }
+
+        .pull_3 {
+            left: -25.0%;
+        }
+
+        .pull_4 {
+            left: -33.333%;
+        }
+
+        .pull_5 {
+            left: -41.667%;
+        }
+
+        .pull_6 {
+            left: -50.0%;
+        }
+
+        .pull_7 {
+            left: -58.333%;
+        }
+
+        .pull_8 {
+            left: -66.667%;
+        }
+
+        .pull_9 {
+            left: -75.0%;
+        }
+
+        .pull_10 {
+            left: -83.333%;
+        }
+
+        .pull_11 {
+            left: -91.667%;
+        }
+
+        .clear {
+            clear: both;
+            display: block;
+            overflow: hidden;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        .clearfix:after {
+            clear: both;
+            content: ' ';
+            display: block;
+            font-size: 0;
+            line-height: 0;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+
+        .clearfix {
+            display: inline-block;
+        }
+
+        * html .clearfix {
+            height: 1%;
+        }
+
+        .clearfix {
+            display: block;
+        }
+
+        .ui-helper-hidden {
+            display: none;
+        }
+
+        .ui-helper-hidden-accessible {
+            position: absolute;
+            left: -99999999px;
+        }
+
+        .ui-helper-reset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            line-height: 1.3;
+            text-decoration: none;
+            font-size: 100%;
+            list-style: none;
+        }
+
+        .ui-helper-clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .ui-helper-clearfix {
+            display: inline-block;
+        }
+
+        * html .ui-helper-clearfix {
+            height: 1%;
+        }
+
+        .ui-helper-clearfix {
+            display: block;
+        }
+
+        .ui-helper-zfix {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            opacity: 0;
+            filter: Alpha(Opacity=0);
+        }
+
+        .ui-state-disabled {
+            cursor: default !important;
+        }
+
+        .ui-icon {
+            display: block;
+            text-indent: -99999px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+        }
+
+        .ui-widget-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ui-widget {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1.1em;
+        }
+
+        .ui-widget .ui-widget {
+            font-size: 1em;
+        }
+
+        .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+            font-family: Verdana, Arial, sans-serif;
+            font-size: 1em;
+        }
+
+        .ui-widget-content {
+            border: 1px solid #aaaaaa;
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+        .ui-widget-content a {
+            color: #222222;
+        }
+
+        .ui-widget-header {
+            border: 1px solid #aaaaaa;
+            background: #cccccc url(../../resource/css-in/images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+            color: #222222;
+            font-weight: bold;
+        }
+
+        .ui-widget-header a {
+            color: #222222;
+        }
+
+        .ui-corner-tl {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        .ui-corner-tr {
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        .ui-corner-bl {
+            -moz-border-radius-bottomleft: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .ui-corner-br {
+            -moz-border-radius-bottomright: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .ui-corner-top {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        .ui-corner-bottom {
+            -moz-border-radius-bottomleft: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .ui-corner-right {
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+            border-top-right-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .ui-corner-left {
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+            border-top-left-radius: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .ui-corner-all {
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .ui-widget-overlay {
+            background: #aaaaaa url(../../resource/css-in/images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+            opacity: .30;
+            filter: Alpha(Opacity=30);
+        }
+
+        .ui-widget-shadow {
+            -webkit-box-shadow: 0px 0px 5px #666666;
+            box-shadow: 0px 0px 5px #666666;
+        }
+
+        .ui-resizable {
+            position: relative;
+        }
+
+        .ui-resizable-handle {
+            position: absolute;
+            font-size: 0.1px;
+            z-index: 99999;
+            display: block;
+        }
+
+        .ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle {
+            display: none;
+        }
+
+        .ui-resizable-n {
+            cursor: n-resize;
+            height: 7px;
+            width: 100%;
+            top: -5px;
+            left: 0;
+        }
+
+        .ui-resizable-s {
+            cursor: s-resize;
+            height: 7px;
+            width: 100%;
+            bottom: -5px;
+            left: 0;
+        }
+
+        .ui-resizable-e {
+            cursor: e-resize;
+            width: 7px;
+            right: -5px;
+            top: 0;
+            height: 100%;
+        }
+
+        .ui-resizable-w {
+            cursor: w-resize;
+            width: 7px;
+            left: -5px;
+            top: 0;
+            height: 100%;
+        }
+
+        .ui-resizable-se {
+            cursor: se-resize;
+            width: 12px;
+            height: 12px;
+            right: 1px;
+            bottom: 1px;
+        }
+
+        .ui-resizable-sw {
+            cursor: sw-resize;
+            width: 9px;
+            height: 9px;
+            left: -5px;
+            bottom: -5px;
+        }
+
+        .ui-resizable-nw {
+            cursor: nw-resize;
+            width: 9px;
+            height: 9px;
+            left: -5px;
+            top: -5px;
+        }
+
+        .ui-resizable-ne {
+            cursor: ne-resize;
+            width: 9px;
+            height: 9px;
+            right: -5px;
+            top: -5px;
+        }
+
+        .ui-selectable-helper {
+            border: 1px dotted black
+        }
+
+        .ui-dialog {
+            position: absolute;
+            padding: .2em;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .ui-dialog .ui-dialog-titlebar {
+            padding: .5em 1em .3em;
+            position: relative;
+        }
+
+        .ui-dialog .ui-dialog-title {
+            float: left;
+            margin: .1em 16px .2em 0;
+        }
+
+        .ui-dialog .ui-dialog-titlebar-close {
+            position: absolute;
+            right: .3em;
+            top: 50%;
+            width: 19px;
+            margin: -10px 0 0 0;
+            padding: 1px;
+            height: 18px;
+        }
+
+        .ui-dialog .ui-dialog-titlebar-close span {
+            display: block;
+            margin: 1px;
+        }
+
+        .ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+        }
+
+        .ui-dialog .ui-dialog-content {
+            border: 0;
+            padding: .5em 1em;
+            overflow: auto;
+            zoom: 1;
+        }
+
+        .ui-dialog .ui-dialog-buttonpane {
+            text-align: left;
+            border-width: 1px 0 0 0;
+            background-image: none;
+            margin: .5em 0 0 0;
+            padding: .3em 1em .5em .4em;
+        }
+
+        .ui-dialog .ui-dialog-buttonpane button {
+            float: right;
+            margin: .5em .4em .5em 0;
+            cursor: pointer;
+            padding: .2em .6em .3em .6em;
+            line-height: 1.4em;
+            width: auto;
+            overflow: visible;
+        }
+
+        .ui-dialog .ui-resizable-se {
+            width: 14px;
+            height: 14px;
+            right: 3px;
+            bottom: 3px;
+        }
+
+        .ui-draggable .ui-dialog-titlebar {
+            cursor: move;
+        }
+
+        .ui-datepicker {
+            width: 17em;
+            padding: .2em .2em 0;
+        }
+
+        .ui-datepicker .ui-datepicker-header {
+            position: relative;
+            padding: .2em 0;
+        }
+
+        .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+            position: absolute;
+            top: 2px;
+            width: 1.8em;
+            height: 1.8em;
+        }
+
+        .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+            top: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev {
+            left: 2px;
+        }
+
+        .ui-datepicker .ui-datepicker-next {
+            right: 2px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev-hover {
+            left: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-next-hover {
+            right: 1px;
+        }
+
+        .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+            display: block;
+            position: absolute;
+            left: 50%;
+            margin-left: -8px;
+            top: 50%;
+            margin-top: -8px;
+        }
+
+        .ui-datepicker .ui-datepicker-title {
+            margin: 0 2.3em;
+            line-height: 1.8em;
+            text-align: center;
+        }
+
+        .ui-datepicker .ui-datepicker-title select {
+            font-size: 1em;
+            margin: 1px 0;
+        }
+
+        .ui-datepicker select.ui-datepicker-month-year {
+            width: 100%;
+        }
+
+        .ui-datepicker select.ui-datepicker-month,
+        .ui-datepicker select.ui-datepicker-year {
+            width: 49%;
+        }
+
+        .ui-datepicker table {
+            width: 100%;
+            font-size: .9em;
+            border-collapse: collapse;
+            margin: 0 0 .4em;
+        }
+
+        .ui-datepicker th {
+            padding: .7em .3em;
+            text-align: center;
+            font-weight: bold;
+            border: 0;
+        }
+
+        .ui-datepicker td {
+            border: 0;
+            padding: 1px;
+        }
+
+        .ui-datepicker td span, .ui-datepicker td a {
+            display: block;
+            padding: .2em;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane {
+            background-image: none;
+            margin: .7em 0 0 0;
+            padding: 0 .2em;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane button {
+            float: right;
+            margin: .5em .2em .4em;
+            cursor: pointer;
+            padding: .2em .6em .3em .6em;
+            width: auto;
+            overflow: visible;
+        }
+
+        .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+            float: left;
+        }
+
+        .ui-datepicker.ui-datepicker-multi {
+            width: auto;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group {
+            float: left;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group table {
+            width: 95%;
+            margin: 0 auto .4em;
+        }
+
+        .ui-datepicker-multi-2 .ui-datepicker-group {
+            width: 50%;
+        }
+
+        .ui-datepicker-multi-3 .ui-datepicker-group {
+            width: 33.3%;
+        }
+
+        .ui-datepicker-multi-4 .ui-datepicker-group {
+            width: 25%;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header {
+            border-left-width: 0;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+            border-left-width: 0;
+        }
+
+        .ui-datepicker-multi .ui-datepicker-buttonpane {
+            clear: left;
+        }
+
+        .ui-datepicker-row-break {
+            clear: both;
+            width: 100%;
+        }
+
+        .ui-datepicker-rtl {
+            direction: rtl;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-prev {
+            right: 2px;
+            left: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-next {
+            left: 2px;
+            right: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-prev:hover {
+            right: 1px;
+            left: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-next:hover {
+            left: 1px;
+            right: auto;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane {
+            clear: right;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane button {
+            float: left;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current {
+            float: right;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-group {
+            float: right;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header {
+            border-right-width: 0;
+            border-left-width: 1px;
+        }
+
+        .ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+            border-right-width: 0;
+            border-left-width: 1px;
+        }
+
+        .ui-tooltip {
+            position: relative;
+            z-index: 9999;
+            max-width: 300px;
+        }
+
+        body .ui-tooltip {
+            border-width: 0px;
+        }
+
+        .ui-datepicker-cover {
+            display: none;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            filter: mask();
+            top: -4px;
+            left: -4px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .ir {
+            position: absolute;
+            overflow: hidden;
+            background:
+        }
+
+        .ir em {
+            visibility: hidden
+        }
+
+        .irRadio {
+            position: relative;
+            overflow: hidden;
+            padding-top: 10px;
+            padding-left: 40px;
+            background:
+        }
+
+        .irRadio em {
+            visibility: hidden
+        }
+
+        .dropDownItemCloseIcon {
+            padding-left: 20px;
+            padding-top: 2px;
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -450px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .brandDropDownSelectorIcon, .brandDropDownSelectorIcon em {
+            padding-top: 5px;
+            margin-left: -4px;
+            margin-top: -3px;
+            padding-left: 12px;
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -793px;
+        }
+
+        .default_DropDownIcon {
+            padding: 2px 4px 2px 36px;
+            border-bottom: 1px dotted #ccc
+        }
+
+        .info, .info em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -622px;
+            width: 16px;
+            height: 16px;
+            padding-top: 2px
+        }
+
+        .selectionSlider, .selectionSlider em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -708px;
+            width: 15px;
+            height: 15px;
+        }
+
+        .imgBrand, .imgBrand em {
+            height: 24px;
+            top: 2px
+        }
+
+        .visaImg, .visaImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 4px -356px;
+        }
+
+        .masterImg, .masterImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px -178px;
+        }
+
+        .amexImg, .amexImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px 0;
+        }
+
+        .soloImg, .soloImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px -270px;
+        }
+
+        .maestroImg, .maestroImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px -88px;
+        }
+
+        .jcbImg, .jcbImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px -1835px;
+        }
+
+        .euddImg, .euddImg em {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 5px -2075px;
+        }
+
+        .visaContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1468px;
+        }
+
+        .masterContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1168px;
+        }
+
+        .amexContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -868px;
+        }
+
+        .maestroContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -998px;
+        }
+
+        .soloContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1298px;
+        }
+
+        .jcbContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -1896px;
+        }
+
+        .euddContainer {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -2136px;
+        }
+
+        .visaCvvDialog, .visaCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/visa_cvv.jpg) no-repeat top left;
+            width: 284px;
+            height: 230px
+        }
+
+        .masterCvvDialog, .masterCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/common_cvv.png) no-repeat top left;
+            width: 200px;
+            height: 120px
+        }
+
+        .amexCvvDialog, .amexCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/amex_cvv.jpg) no-repeat top left;
+            width: 200px;
+            height: 120px
+        }
+
+        .soloCvvDialog, .soloCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/common_cvv.png) no-repeat top left;
+            width: 200px;
+            height: 120px
+        }
+
+        .maestroCvvDialog, .maestroCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/common_cvv.png) no-repeat top left;
+            width: 200px;
+            height: 120px
+        }
+
+        .jcbCvvDialog, .jcbCvvDialog em {
+            background: url(https://test.ppipe.net/hpp/resource/image/common_cvv.png) no-repeat top left;
+            width: 200px;
+            height: 120px
+        }
+
+        .jqifade {
+            position: absolute;
+            background-color: #777777;
+        }
+
+        iframe.jqifade {
+            display: block;
+            z-index: -1;
+        }
+
+        div.jqi {
+            width: 400px;
+            max-width: 90%;
+            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+            position: absolute;
+            background-color: #ffffff;
+            font-size: 11px;
+            text-align: left;
+            border: solid 1px #eeeeee;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            padding: 7px;
+        }
+
+        div.jqi .jqicontainer {
+        }
+
+        div.jqi .jqiclose {
+            position: absolute;
+            top: 4px;
+            right: -2px;
+            width: 18px;
+            cursor: default;
+            color: #bbbbbb;
+            font-weight: bold;
+        }
+
+        div.jqi .jqistate {
+            background-color: #fff;
+        }
+
+        div.jqi .jqititle {
+            padding: 5px 10px;
+            font-size: 16px;
+            line-height: 20px;
+            border-bottom: solid 1px #eeeeee;
+        }
+
+        div.jqi .jqimessage {
+            padding: 10px;
+            line-height: 20px;
+            color: #444444;
+            overflow: auto;
+        }
+
+        div.jqi .jqibuttonshide {
+            display: none;
+        }
+
+        div.jqi .jqibuttons {
+            text-align: right;
+            margin: 0 -7px -7px -7px;
+            border-top: solid 1px #e4e4e4;
+            background-color: #f4f4f4;
+            border-radius: 0 0 6px 6px;
+            -moz-border-radius: 0 0 6px 6px;
+            -webkit-border-radius: 0 0 6px 6px;
+        }
+
+        div.jqi .jqibuttons button {
+            margin: 0;
+            padding: 15px 20px;
+            background-color: transparent;
+            font-weight: normal;
+            border: none;
+            border-left: solid 1px #e4e4e4;
+            color: #777;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        div.jqi .jqibuttons button.jqidefaultbutton {
+            color: #489afe;
+        }
+
+        div.jqi .jqibuttons button:hover,
+        div.jqi .jqibuttons button:focus {
+            color: #287ade;
+            outline: none;
+        }
+
+        div.jqi .jqibuttons button[disabled] {
+            color: #aaa;
+        }
+
+        .jqiwarning .jqi .jqibuttons {
+            background-color: #b95656;
+        }
+
+        div.jqi .jqiparentstate::after {
+            background-color: #777;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 6px;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+        }
+
+        div.jqi .jqisubstate {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            width: 60%;
+            padding: 7px;
+            border: solid 1px #eeeeee;
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            -moz-border-radius: 0 0 6px 6px;
+            -webkit-border-radius: 0 0 6px 6px;
+        }
+
+        div.jqi .jqisubstate .jqibuttons button {
+            padding: 10px 18px;
+        }
+
+        .jqi .jqiarrow {
+            position: absolute;
+            height: 0;
+            width: 0;
+            line-height: 0;
+            font-size: 0;
+            border: solid 10px transparent;
+        }
+
+        .jqi .jqiarrowtl {
+            left: 10px;
+            top: -20px;
+            border-bottom-color: #ffffff;
+        }
+
+        .jqi .jqiarrowtc {
+            left: 50%;
+            top: -20px;
+            border-bottom-color: #ffffff;
+            margin-left: -10px;
+        }
+
+        .jqi .jqiarrowtr {
+            right: 10px;
+            top: -20px;
+            border-bottom-color: #ffffff;
+        }
+
+        .jqi .jqiarrowbl {
+            left: 10px;
+            bottom: -20px;
+            border-top-color: #ffffff;
+        }
+
+        .jqi .jqiarrowbc {
+            left: 50%;
+            bottom: -20px;
+            border-top-color: #ffffff;
+            margin-left: -10px;
+        }
+
+        .jqi .jqiarrowbr {
+            right: 10px;
+            bottom: -20px;
+            border-top-color: #ffffff;
+        }
+
+        .jqi .jqiarrowlt {
+            left: -20px;
+            top: 10px;
+            border-right-color: #ffffff;
+        }
+
+        .jqi .jqiarrowlm {
+            left: -20px;
+            top: 50%;
+            border-right-color: #ffffff;
+            margin-top: -10px;
+        }
+
+        .jqi .jqiarrowlb {
+            left: -20px;
+            bottom: 10px;
+            border-right-color: #ffffff;
+        }
+
+        .jqi .jqiarrowrt {
+            right: -20px;
+            top: 10px;
+            border-left-color: #ffffff;
+        }
+
+        .jqi .jqiarrowrm {
+            right: -20px;
+            top: 50%;
+            border-left-color: #ffffff;
+            margin-top: -10px;
+        }
+
+        .jqi .jqiarrowrb {
+            right: -20px;
+            bottom: 10px;
+            border-left-color: #ffffff;
+        }
+
+        .content .nopmargin p + p {
+            margin-top: 0
+        }
+
+        .content .nopmargin p {
+            margin-bottom: 4px
+        }
+
+        .maxWidth {
+            width: 90%
+        }
+
+        .content h2 {
+            padding: 5px 4px 4px 4px
+        }
+
+        .default_paySelection {
+            margin-bottom: 10px;
+            padding-bottom: 0px
+        }
+
+        .default_cardSeparator {
+            margin: 5px 0 10px 0
+        }
+
+        .clearfix {
+            padding-bottom: 0px
+        }
+
+        .right {
+            text-align: right
+        }
+
+        .left {
+            text-align: left
+        }
+
+        .hide {
+            display: none
+        }
+
+        .ui-widget-header {
+            background: none;
+            border: none
+        }
+
+        .dataBox {
+            padding: 0px 1em 1.6em 0;
+            margin: 0px 0px 5px 0px
+        }
+
+        #paySelectionControl {
+            padding: 0px 0px 0px 12px
+        }
+
+        .container_12 span.notification {
+            padding-bottom: 5px;
+            width: 100%
+        }
+
+        .ui-dialog {
+            padding-right: 0px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ui-icon-closethick {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            padding: 5px;
+            background-position: 0 -450px;
+        }
+
+        .ui-icon-gripsmall-diagonal-se {
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -536px;
+        }
+
+        .ui-dialog-content {
+            padding: 0.5em 1em 0.3em
+        }
+
+        .ui-dialog .ui-dialog-titlebar {
+            margin-bottom: 10px;
+        }
+
+        .default_tooltip {
+            position: absolute;
+            z-index: 3000;
+            padding: 8px;
+        }
+
+        .default_tooltip h3, .default_tooltip div {
+            margin: 0;
+        }
+
+        .tooltip {
+            cursor: pointer
+        }
+
+        .cvv {
+            width: 5.0em
+        }
+
+        .custom_showInputInfo {
+            width: 1px
+        }
+
+        .custom_activateFieldValidation {
+            width: 1px
+        }
+
+        .custom_showTooltip {
+            width: 1px
+        }
+
+        .custom_choosePaymentSelection {
+            width: 1px
+        }
+
+        .waitingDialog {
+            padding-right: 0px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .waitingDialog .ui-dialog-titlebar-close {
+            display: none;
+        }
+
+        .waitingDialog .ui-dialog-content {
+            background: url(https://test.ppipe.net/hpp/resource/image/loading.gif) no-repeat 5px 5px;
+            padding: 7px 25px !important;
+            width: 250px;
+            min-height: 1px !important;
+        }
+
+        #brandSelectionSlider {
+            padding: 0px 0px 0px 0px
+        }
+
+        #selectionSliderLine {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px
+        }
+
+        #selectionSlider {
+            position: relative;
+            margin: 4px 0px 0px 0px;
+            padding: 0px 0px 0px 0px
+        }
+
+        div#brandDropDownCurrentSelected, div#brandDropDownSelectorContainer {
+            padding-bottom: 4px;
+        }
+
+        #brandDropDownContainer {
+            position: absolute;
+            top: 30px;
+            z-index: 100;
+            background: white;
+            border: 1px solid #ccc
+        }
+
+        .dropDownItem {
+            padding: 10px 0px 5px 0px;
+            border-bottom: 1px dotted #ccc
+        }
+
+        .dropDownItemSelected {
+            width: 98%;
+            padding: 10px 0px 5px 0px;
+            border-bottom: 1px dotted #ccc;
+            font-weight: bold
+        }
+
+        .dropDownItemHover {
+            background: #ddd
+        }
+
+        .brandSelectionDropDown {
+            cursor: pointer;
+            border: 1px solid #ddd;
+            background: url(https://test.ppipe.net/hpp/resource/image/sprite.png) no-repeat;
+            background-position: 0 -793px;
+        }
+
+        .brandDropDownSelectorContainer {
+            padding-top: 10px;
+        }
+
+        .brandDropDownCurrentSelected {
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        .brandDropDownSelector {
+            cursor: pointer;
+        }
+
+        .dropDownItemClose {
+            padding: 14px 6px 0px 0px
+        }
+
+        #brandDropDownCurrentSelected span.irRadio {
+            top: 4px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css"
+          href="https://chasepaymentech.docs.oppwa.com/sites/default/files/checkout.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://local-eshop.schwarzkopf-professional.es:9002/_ui/responsive/theme-jpm-payment/css/style.css">
+    <!--[if IE]>
+    <style type="text/css">
+        #brandSelectionSlider .irRadio, .custom_brandRadioContainer .irRadio {
+            padding-top: 5px;
+        }
+
+        #brandDropDownContainer .dropDownItem {
+            padding: 10px 0px 0px 0px;
+            height: 20px
+        }
+
+        .brandSelectionSimpleDropDown {
+            width: 100%
+        }            </style>
+    <![endif]-->
+
+</head>
+<body class="content custom_body">
+<div class="container_12 clearfix">
+    <form id="ExecutePay" name="ExecutePay"
+          action="/hpp/web/ExecutePay;jsessionid=3581BF1CE4A514D8E3B12E4F4B598279.uat01-vm-hpp01" method="post">
+        <!-- CON-503: For update transactions add a field to use in JavaScript for changes related to this transaction type -->
+        <p id="userInformation" class="grid_16 default_userInformation custom_userInformation">
+
+        </p>
+        <div id="customerDetails" class="default_customerDetails custom_customerDetails">
+            <!-- REVIEW #14461. -->
+            <!-- ContactDetails -->
+            <div id="contactDetails"
+                 class="dataBox custom_dataBox nopmargin clearfix default_contactDetails custom_contactDetails">
+                <h2 class="custom_contactDetailsHeader">Contact details</h2>
+                <div class="formFields customerContactEmail custom_customerContactEmail required clearfix  ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressBuilder.email">
+                            Email address
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                                <span class="grid_12 notification custom_notification hide">
+                Please insert a valid email address.
+            </span>
+                        <input title="" class="tooltip maxWidth custom_maxWidth emailValidation"
+                               id="billingAddressBuilder.email" name="billingAddressBuilder.email" type="text"
+                               value="dummy@email.com" 
+                        />
+                    </p>
+                </div>
+                <div class="formFields customerContactTelephone custom_customerContactTelephone required clearfix  ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressBuilder.phone">
+                            Telephone number
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                                <span class="grid_12 notification custom_notification hide">
+                Mandatory field
+            </span>
+                        <input title="" class="tooltip maxWidth custom_maxWidth " id="billingAddressBuilder.phone"
+                               name="billingAddressBuilder.phone" type="tel" value="" 
+                        />
+                    </p>
+                </div>
+                <!-- CON-503: For update transactions do not display Mobile Phone -->
+                <div class="formFields customerContactMobile custom_customerContactMobile required clearfix  ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressBuilder.mobile">
+                            Mobile number
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                                <span class="grid_12 notification custom_notification hide">
+                Mandatory field
+            </span>
+                        <input title="" class="tooltip maxWidth custom_maxWidth " id="billingAddressBuilder.mobile"
+                               name="billingAddressBuilder.mobile" type="tel" value="" 
+                        />
+                    </p>
+                </div>
+            </div>
+            <!-- billingAddress -->
+            <div id="billingAdddress"
+                 class="dataBox custom_dataBox nopmargin clearfix billingAddress custom_billingAddress targetAddress">
+                <h2 class="custom_billingAddressHeader">Billing address details</h2>
+                <!-- CON-503: For update transactions do not display Given Name, Family Name, Address Company -->
+                <div class="formFields custom_addressGivenName custom_billingAddressGivenName  mandatory clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressGivenName">
+                            Given name
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressGivenName"
+                               name="billingAddressBuilder.givenName" type="text" value="Joe" 
+                        />
+                    </p>
+                </div>
+                <div class="formFields custom_addressFamilyName custom_billingAddressFamilyName  mandatory clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressFamilyName">
+                            Family name
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressFamilyName"
+                               name="billingAddressBuilder.familyName" type="text" value="Doe" 
+                        />
+                    </p>
+                </div>
+                <div class="formFields custom_addressCompany custom_billingAddressCompany  clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressCompany">
+                            Company
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressCompany"
+                               name="billingAddressBuilder.companyName" type="text" value="" 
+                        />
+                    </p>
+                </div>
+                <!-- REVIEW #14129. HPP: Address line 1 & 2: address lines handling -->
+                <div class="formFields custom_addressStreet custom_billingAddressStreet  mandatory clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressStreet">
+                            Street
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressStreet"
+                               name="billingAddressBuilder.street" type="text" value="123 Test Street"
+                               
+                        />
+                    </p>
+                </div>
+                <div class="formFields custom_addressCity custom_billingAddressCity  mandatory clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressCity">
+                            Town/City
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressCity"
+                               name="billingAddressBuilder.city" type="text" value="London" 
+                        />
+                    </p>
+                </div>
+                <div class="formFields custom_addressState custom_billingAddressState  clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressState">
+                            County/State
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Mandatory field</span>
+                        <input title="" class="maxWidth custom_maxWidth addressTarget "
+                               id="billingAddressState"
+                               name="billingAddressBuilder.state" type="text" value="" 
+                        />
+                    </p>
+                </div>
+                <div class="tooltip formFields custom_addressPostcode custom_billingAddressPostcode clearfix ">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressPostcode">
+                            Postcode/Zip
+                        </label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <span class="grid_12 notification custom_notification hide">Please insert a valid post code</span>
+                        <input class="maxWidth custom_maxWidth addressTarget postCode"
+                               id="billingAddressZip"
+                               name="billingAddressBuilder.zip" type="text" value="EC1R 3BN" 
+                        />
+                    </p>
+                </div>
+                <div class="tooltip formFields custom_addressCountry custom_billingAddressCountry mandatory clearfix "
+                >
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label" for="billingAddressCountry">Country</label>
+                    </p>
+                    <p class="grid_8 custom_input">
+                        <select class="maxWidth custom_maxWidth addressTarget "
+                                id="billingAddressCountry"
+                                name="billingAddressBuilder.country" 
+                                size="1">
+                            <option value="AF"
+
+                            >
+                                AFGHANISTAN
+                            </option>
+                            <option value="AX"
+
+                            >
+                                ALAND ISLANDS
+                            </option>
+                            <option value="AL"
+
+                            >
+                                ALBANIA
+                            </option>
+                            <option value="DZ"
+
+                            >
+                                ALGERIA
+                            </option>
+                            <option value="AS"
+
+                            >
+                                AMERICAN SAMOA
+                            </option>
+                            <option value="AD"
+
+                            >
+                                ANDORRA
+                            </option>
+                            <option value="AO"
+
+                            >
+                                ANGOLA
+                            </option>
+                            <option value="AI"
+
+                            >
+                                ANGUILLA
+                            </option>
+                            <option value="AQ"
+
+                            >
+                                ANTARCTICA
+                            </option>
+                            <option value="AG"
+
+                            >
+                                ANTIGUA AND BARBUDA
+                            </option>
+                            <option value="AR"
+
+                            >
+                                ARGENTINA
+                            </option>
+                            <option value="AM"
+
+                            >
+                                ARMENIA
+                            </option>
+                            <option value="AW"
+
+                            >
+                                ARUBA
+                            </option>
+                            <option value="AU"
+
+                            >
+                                AUSTRALIA
+                            </option>
+                            <option value="AT"
+
+                            >
+                                AUSTRIA
+                            </option>
+                            <option value="AZ"
+
+                            >
+                                AZERBAIJAN
+                            </option>
+                            <option value="BS"
+
+                            >
+                                BAHAMAS
+                            </option>
+                            <option value="BH"
+
+                            >
+                                BAHRAIN
+                            </option>
+                            <option value="BD"
+
+                            >
+                                BANGLADESH
+                            </option>
+                            <option value="BB"
+
+                            >
+                                BARBADOS
+                            </option>
+                            <option value="BE"
+
+                            >
+                                BELGIUM
+                            </option>
+                            <option value="BZ"
+
+                            >
+                                BELIZE
+                            </option>
+                            <option value="BJ"
+
+                            >
+                                BENIN
+                            </option>
+                            <option value="BM"
+
+                            >
+                                BERMUDA
+                            </option>
+                            <option value="BT"
+
+                            >
+                                BHUTAN
+                            </option>
+                            <option value="BO"
+
+                            >
+                                BOLIVIA
+                            </option>
+                            <option value="BA"
+
+                            >
+                                BOSNIA AND HERZEGOVINA
+                            </option>
+                            <option value="BW"
+
+                            >
+                                BOTSWANA
+                            </option>
+                            <option value="BV"
+
+                            >
+                                BOUVET ISLAND
+                            </option>
+                            <option value="BR"
+
+                            >
+                                BRAZIL
+                            </option>
+                            <option value="IO"
+
+                            >
+                                BRITISH INDIAN OCEAN TERRITORY
+                            </option>
+                            <option value="BN"
+
+                            >
+                                BRUNEI DARUSSALAM
+                            </option>
+                            <option value="BG"
+
+                            >
+                                BULGARIA
+                            </option>
+                            <option value="BF"
+
+                            >
+                                BURKINA FASO
+                            </option>
+                            <option value="BI"
+
+                            >
+                                BURUNDI
+                            </option>
+                            <option value="KH"
+
+                            >
+                                CAMBODIA
+                            </option>
+                            <option value="CM"
+
+                            >
+                                CAMEROON
+                            </option>
+                            <option value="CA"
+
+                            >
+                                CANADA
+                            </option>
+                            <option value="CV"
+
+                            >
+                                CAPE VERDE
+                            </option>
+                            <option value="KY"
+
+                            >
+                                CAYMAN ISLANDS
+                            </option>
+                            <option value="CF"
+
+                            >
+                                CENTRAL AFRICAN REPUBLIC
+                            </option>
+                            <option value="TD"
+
+                            >
+                                CHAD
+                            </option>
+                            <option value="CL"
+
+                            >
+                                CHILE
+                            </option>
+                            <option value="CN"
+
+                            >
+                                CHINA
+                            </option>
+                            <option value="CX"
+
+                            >
+                                CHRISTMAS ISLAND
+                            </option>
+                            <option value="CC"
+
+                            >
+                                COCOS (KEELING) ISLANDS
+                            </option>
+                            <option value="CO"
+
+                            >
+                                COLOMBIA
+                            </option>
+                            <option value="KM"
+
+                            >
+                                COMOROS
+                            </option>
+                            <option value="CK"
+
+                            >
+                                COOK ISLANDS
+                            </option>
+                            <option value="CR"
+
+                            >
+                                COSTA RICA
+                            </option>
+                            <option value="HR"
+
+                            >
+                                CROATIA
+                            </option>
+                            <option value="CY"
+
+                            >
+                                CYPRUS
+                            </option>
+                            <option value="CZ"
+
+                            >
+                                CZECH REPUBLIC
+                            </option>
+                            <option value="DK"
+
+                            >
+                                DENMARK
+                            </option>
+                            <option value="DJ"
+
+                            >
+                                DJIBOUTI
+                            </option>
+                            <option value="DM"
+
+                            >
+                                DOMINICA
+                            </option>
+                            <option value="DO"
+
+                            >
+                                DOMINICAN REPUBLIC
+                            </option>
+                            <option value="TP"
+
+                            >
+                                EAST TIMOR
+                            </option>
+                            <option value="EC"
+
+                            >
+                                ECUADOR
+                            </option>
+                            <option value="EG"
+
+                            >
+                                EGYPT
+                            </option>
+                            <option value="SV"
+
+                            >
+                                EL SALVADOR
+                            </option>
+                            <option value="GQ"
+
+                            >
+                                EQUATORIAL GUINEA
+                            </option>
+                            <option value="ER"
+
+                            >
+                                ERITREA
+                            </option>
+                            <option value="EE"
+
+                            >
+                                ESTONIA
+                            </option>
+                            <option value="ET"
+
+                            >
+                                ETHIOPIA
+                            </option>
+                            <option value="FK"
+
+                            >
+                                FALKLAND ISLANDS (MALVINAS)
+                            </option>
+                            <option value="FO"
+
+                            >
+                                FAROE ISLANDS
+                            </option>
+                            <option value="FJ"
+
+                            >
+                                FIJI
+                            </option>
+                            <option value="FI"
+
+                            >
+                                FINLAND
+                            </option>
+                            <option value="FR"
+
+                            >
+                                FRANCE
+                            </option>
+                            <option value="GF"
+
+                            >
+                                FRENCH GUIANA
+                            </option>
+                            <option value="PF"
+
+                            >
+                                FRENCH POLYNESIA
+                            </option>
+                            <option value="TF"
+
+                            >
+                                FRENCH SOUTHERN TERRITORIES
+                            </option>
+                            <option value="GA"
+
+                            >
+                                GABON
+                            </option>
+                            <option value="GM"
+
+                            >
+                                GAMBIA
+                            </option>
+                            <option value="GE"
+
+                            >
+                                GEORGIA
+                            </option>
+                            <option value="DE"
+
+                            >
+                                GERMANY
+                            </option>
+                            <option value="GH"
+
+                            >
+                                GHANA
+                            </option>
+                            <option value="GI"
+
+                            >
+                                GIBRALTAR
+                            </option>
+                            <option value="GR"
+
+                            >
+                                GREECE
+                            </option>
+                            <option value="GL"
+
+                            >
+                                GREENLAND
+                            </option>
+                            <option value="GD"
+
+                            >
+                                GRENADA
+                            </option>
+                            <option value="GP"
+
+                            >
+                                GUADELOUPE
+                            </option>
+                            <option value="GU"
+
+                            >
+                                GUAM
+                            </option>
+                            <option value="GT"
+
+                            >
+                                GUATEMALA
+                            </option>
+                            <option value="GG"
+
+                            >
+                                GUERNSEY
+                            </option>
+                            <option value="GN"
+
+                            >
+                                GUINEA
+                            </option>
+                            <option value="GW"
+
+                            >
+                                GUINEA-BISSAU
+                            </option>
+                            <option value="GY"
+
+                            >
+                                GUYANA
+                            </option>
+                            <option value="HT"
+
+                            >
+                                HAITI
+                            </option>
+                            <option value="HM"
+
+                            >
+                                HEARD ISLAND AND MCDONALD ISLANDS
+                            </option>
+                            <option value="VA"
+
+                            >
+                                HOLY SEE (VATICAN CITY STATE)
+                            </option>
+                            <option value="HN"
+
+                            >
+                                HONDURAS
+                            </option>
+                            <option value="HK"
+
+                            >
+                                HONG KONG
+                            </option>
+                            <option value="HU"
+
+                            >
+                                HUNGARY
+                            </option>
+                            <option value="IS"
+
+                            >
+                                ICELAND
+                            </option>
+                            <option value="IN"
+
+                            >
+                                INDIA
+                            </option>
+                            <option value="ID"
+
+                            >
+                                INDONESIA
+                            </option>
+                            <option value="IE"
+
+                            >
+                                IRELAND
+                            </option>
+                            <option value="IM"
+
+                            >
+                                ISLE OF MAN
+                            </option>
+                            <option value="IL"
+
+                            >
+                                ISRAEL
+                            </option>
+                            <option value="IT"
+
+                            >
+                                ITALY
+                            </option>
+                            <option value="JM"
+
+                            >
+                                JAMAICA
+                            </option>
+                            <option value="JP"
+
+                            >
+                                JAPAN
+                            </option>
+                            <option value="JE"
+
+                            >
+                                JERSEY
+                            </option>
+                            <option value="JO"
+
+                            >
+                                JORDAN
+                            </option>
+                            <option value="KZ"
+
+                            >
+                                KAZAKSTAN
+                            </option>
+                            <option value="KE"
+
+                            >
+                                KENYA
+                            </option>
+                            <option value="KI"
+
+                            >
+                                KIRIBATI
+                            </option>
+                            <option value="KR"
+
+                            >
+                                KOREA, REPUBLIC OF
+                            </option>
+                            <option value="KW"
+
+                            >
+                                KUWAIT
+                            </option>
+                            <option value="KG"
+
+                            >
+                                KYRGYZSTAN
+                            </option>
+                            <option value="LA"
+
+                            >
+                                LAO PEOPLE'S DEMOCRATIC REPUBLIC
+                            </option>
+                            <option value="LV"
+
+                            >
+                                LATVIA
+                            </option>
+                            <option value="LS"
+
+                            >
+                                LESOTHO
+                            </option>
+                            <option value="LI"
+
+                            >
+                                LIECHTENSTEIN
+                            </option>
+                            <option value="LT"
+
+                            >
+                                LITHUANIA
+                            </option>
+                            <option value="LU"
+
+                            >
+                                LUXEMBOURG
+                            </option>
+                            <option value="MO"
+
+                            >
+                                MACAU
+                            </option>
+                            <option value="MK"
+
+                            >
+                                MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF
+                            </option>
+                            <option value="MG"
+
+                            >
+                                MADAGASCAR
+                            </option>
+                            <option value="MW"
+
+                            >
+                                MALAWI
+                            </option>
+                            <option value="MY"
+
+                            >
+                                MALAYSIA
+                            </option>
+                            <option value="MV"
+
+                            >
+                                MALDIVES
+                            </option>
+                            <option value="ML"
+
+                            >
+                                MALI
+                            </option>
+                            <option value="MT"
+
+                            >
+                                MALTA
+                            </option>
+                            <option value="MH"
+
+                            >
+                                MARSHALL ISLANDS
+                            </option>
+                            <option value="MQ"
+
+                            >
+                                MARTINIQUE
+                            </option>
+                            <option value="MR"
+
+                            >
+                                MAURITANIA
+                            </option>
+                            <option value="MU"
+
+                            >
+                                MAURITIUS
+                            </option>
+                            <option value="YT"
+
+                            >
+                                MAYOTTE
+                            </option>
+                            <option value="MX"
+
+                            >
+                                MEXICO
+                            </option>
+                            <option value="FM"
+
+                            >
+                                MICRONESIA, FEDERATED STATES OF
+                            </option>
+                            <option value="MD"
+
+                            >
+                                MOLDOVA, REPUBLIC OF
+                            </option>
+                            <option value="MC"
+
+                            >
+                                MONACO
+                            </option>
+                            <option value="MN"
+
+                            >
+                                MONGOLIA
+                            </option>
+                            <option value="ME"
+
+                            >
+                                MONTENEGRO
+                            </option>
+                            <option value="MS"
+
+                            >
+                                MONTSERRAT
+                            </option>
+                            <option value="MA"
+
+                            >
+                                MOROCCO
+                            </option>
+                            <option value="MZ"
+
+                            >
+                                MOZAMBIQUE
+                            </option>
+                            <option value="NA"
+
+                            >
+                                NAMIBIA
+                            </option>
+                            <option value="NR"
+
+                            >
+                                NAURU
+                            </option>
+                            <option value="NP"
+
+                            >
+                                NEPAL
+                            </option>
+                            <option value="NL"
+
+                            >
+                                NETHERLANDS
+                            </option>
+                            <option value="AN"
+
+                            >
+                                NETHERLANDS ANTILLES
+                            </option>
+                            <option value="NC"
+
+                            >
+                                NEW CALEDONIA
+                            </option>
+                            <option value="NZ"
+
+                            >
+                                NEW ZEALAND
+                            </option>
+                            <option value="NI"
+
+                            >
+                                NICARAGUA
+                            </option>
+                            <option value="NE"
+
+                            >
+                                NIGER
+                            </option>
+                            <option value="NG"
+
+                            >
+                                NIGERIA
+                            </option>
+                            <option value="NU"
+
+                            >
+                                NIUE
+                            </option>
+                            <option value="NF"
+
+                            >
+                                NORFOLK ISLAND
+                            </option>
+                            <option value="MP"
+
+                            >
+                                NORTHERN MARIANA ISLANDS
+                            </option>
+                            <option value="NO"
+
+                            >
+                                NORWAY
+                            </option>
+                            <option value="OM"
+
+                            >
+                                OMAN
+                            </option>
+                            <option value="PK"
+
+                            >
+                                PAKISTAN
+                            </option>
+                            <option value="PW"
+
+                            >
+                                PALAU
+                            </option>
+                            <option value="PS"
+
+                            >
+                                PALESTINIAN TERRITORY, OCCUPIED
+                            </option>
+                            <option value="PA"
+
+                            >
+                                PANAMA
+                            </option>
+                            <option value="PG"
+
+                            >
+                                PAPUA NEW GUINEA
+                            </option>
+                            <option value="PY"
+
+                            >
+                                PARAGUAY
+                            </option>
+                            <option value="PE"
+
+                            >
+                                PERU
+                            </option>
+                            <option value="PH"
+
+                            >
+                                PHILIPPINES
+                            </option>
+                            <option value="PN"
+
+                            >
+                                PITCAIRN
+                            </option>
+                            <option value="PL"
+
+                            >
+                                POLAND
+                            </option>
+                            <option value="PT"
+
+                            >
+                                PORTUGAL
+                            </option>
+                            <option value="PR"
+
+                            >
+                                PUERTO RICO
+                            </option>
+                            <option value="QA"
+
+                            >
+                                QATAR
+                            </option>
+                            <option value="RE"
+
+                            >
+                                REUNION
+                            </option>
+                            <option value="RO"
+
+                            >
+                                ROMANIA
+                            </option>
+                            <option value="RU"
+
+                            >
+                                RUSSIAN FEDERATION
+                            </option>
+                            <option value="RW"
+
+                            >
+                                RWANDA
+                            </option>
+                            <option value="SH"
+
+                            >
+                                SAINT HELENA
+                            </option>
+                            <option value="KN"
+
+                            >
+                                SAINT KITTS AND NEVIS
+                            </option>
+                            <option value="LC"
+
+                            >
+                                SAINT LUCIA
+                            </option>
+                            <option value="PM"
+
+                            >
+                                SAINT PIERRE AND MIQUELON
+                            </option>
+                            <option value="VC"
+
+                            >
+                                SAINT VINCENT AND THE GRENADINES
+                            </option>
+                            <option value="WS"
+
+                            >
+                                SAMOA
+                            </option>
+                            <option value="SM"
+
+                            >
+                                SAN MARINO
+                            </option>
+                            <option value="ST"
+
+                            >
+                                SAO TOME AND PRINCIPE
+                            </option>
+                            <option value="SA"
+
+                            >
+                                SAUDI ARABIA
+                            </option>
+                            <option value="SN"
+
+                            >
+                                SENEGAL
+                            </option>
+                            <option value="RS"
+
+                            >
+                                SERBIA
+                            </option>
+                            <option value="SC"
+
+                            >
+                                SEYCHELLES
+                            </option>
+                            <option value="SL"
+
+                            >
+                                SIERRA LEONE
+                            </option>
+                            <option value="SG"
+
+                            >
+                                SINGAPORE
+                            </option>
+                            <option value="SK"
+
+                            >
+                                SLOVAKIA
+                            </option>
+                            <option value="SI"
+
+                            >
+                                SLOVENIA
+                            </option>
+                            <option value="SB"
+
+                            >
+                                SOLOMON ISLANDS
+                            </option>
+                            <option value="ZA"
+
+                            >
+                                SOUTH AFRICA
+                            </option>
+                            <option value="GS"
+
+                            >
+                                SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS
+                            </option>
+                            <option value="ES"
+
+                            >
+                                SPAIN
+                            </option>
+                            <option value="LK"
+
+                            >
+                                SRI LANKA
+                            </option>
+                            <option value="SR"
+
+                            >
+                                SURINAME
+                            </option>
+                            <option value="SJ"
+
+                            >
+                                SVALBARD AND JAN MAYEN
+                            </option>
+                            <option value="SZ"
+
+                            >
+                                SWAZILAND
+                            </option>
+                            <option value="SE"
+
+                            >
+                                SWEDEN
+                            </option>
+                            <option value="CH"
+
+                            >
+                                SWITZERLAND
+                            </option>
+                            <option value="TW"
+
+                            >
+                                TAIWAN
+                            </option>
+                            <option value="TJ"
+
+                            >
+                                TAJIKISTAN
+                            </option>
+                            <option value="TZ"
+
+                            >
+                                TANZANIA, UNITED REPUBLIC OF
+                            </option>
+                            <option value="TH"
+
+                            >
+                                THAILAND
+                            </option>
+                            <option value="TG"
+
+                            >
+                                TOGO
+                            </option>
+                            <option value="TK"
+
+                            >
+                                TOKELAU
+                            </option>
+                            <option value="TO"
+
+                            >
+                                TONGA
+                            </option>
+                            <option value="TT"
+
+                            >
+                                TRINIDAD AND TOBAGO
+                            </option>
+                            <option value="TN"
+
+                            >
+                                TUNISIA
+                            </option>
+                            <option value="TR"
+
+                            >
+                                TURKEY
+                            </option>
+                            <option value="TM"
+
+                            >
+                                TURKMENISTAN
+                            </option>
+                            <option value="TC"
+
+                            >
+                                TURKS AND CAICOS ISLANDS
+                            </option>
+                            <option value="TV"
+
+                            >
+                                TUVALU
+                            </option>
+                            <option value="UG"
+
+                            >
+                                UGANDA
+                            </option>
+                            <option value="UA"
+
+                            >
+                                UKRAINE
+                            </option>
+                            <option value="AE"
+
+                            >
+                                UNITED ARAB EMIRATES
+                            </option>
+                            <option value="GB"
+                                    selected="selected"
+
+                            >
+                                UNITED KINGDOM
+                            </option>
+                            <option value="US"
+
+                            >
+                                UNITED STATES
+                            </option>
+                            <option value="UM"
+
+                            >
+                                UNITED STATES MINOR OUTLYING ISLANDS
+                            </option>
+                            <option value="UY"
+
+                            >
+                                URUGUAY
+                            </option>
+                            <option value="UZ"
+
+                            >
+                                UZBEKISTAN
+                            </option>
+                            <option value="VU"
+
+                            >
+                                VANUATU
+                            </option>
+                            <option value="VE"
+
+                            >
+                                VENEZUELA
+                            </option>
+                            <option value="VN"
+
+                            >
+                                VIETNAM
+                            </option>
+                            <option value="VG"
+
+                            >
+                                VIRGIN ISLANDS, BRITISH
+                            </option>
+                            <option value="VI"
+
+                            >
+                                VIRGIN ISLANDS, U.S.
+                            </option>
+                            <option value="WF"
+
+                            >
+                                WALLIS AND FUTUNA
+                            </option>
+                            <option value="EH"
+
+                            >
+                                WESTERNSAHARA
+                            </option>
+                            <option value="ZM"
+
+                            >
+                                ZAMBIA
+                            </option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Payment -->
+        <div id="payment" class="dataBox custom_dataBox nopmargin clearfix default_payment custom_payment">
+            <h2 class="custom_paymentHeader">Payment</h2>
+            <div id="paySelection" class="formFields clearfix default_paySelection custom_paySelection">
+                <p class="grid_4 custom_labelColumn">
+                            <span id="orderAmount" class="default_orderAmount custom_orderAmount">GBP 0.09
+                                <span> by</span>
+                            </span>
+                </p>
+                <!-- different option for brand selection -->
+                <div id="paySelectionControl" class="grid_7_5 omega">
+                    <!-- Slider with icons -->
+                    <div id="brandSelectionSlider" class="brandSelectionSlider custom_brandSelectionSlider hide">
+                                <span id="slidervisaImg"
+                                      class="irRadio imgBrand tooltip visaImg custom_visaImg preselected" title="  Visa
+  " value="visa">
+                                    <em class="custom_visaImg">V</em>
+                                </span>
+                        <span id="slidermasterImg" class="irRadio imgBrand tooltip masterImg custom_masterImg " title="  MasterCard
+  " value="master">
+                                    <em class="custom_masterImg">V</em>
+                                </span>
+                        <span id="slidermaestroImg" class="irRadio imgBrand tooltip maestroImg custom_maestroImg "
+                              title="  Switch / Maestro
+  " value="maestro">
+                                    <em class="custom_maestroImg">V</em>
+                                </span>
+                        <span id="slideramexImg" class="irRadio imgBrand tooltip amexImg custom_amexImg " title="   American Express
+  " value="amex">
+                                    <em class="custom_amexImg">V</em>
+                                </span>
+                        <div id="selectionSliderLine">
+                            <div id="selectionSlider" class="ir selectionSlider custom_selectionSlider hide"></div>
+                        </div>
+                    </div>
+                    <!-- drop down with icons (icons are added below, see brandDropDownContainer -->
+                    <div id="brandSelectionDropDown"
+                         class="dropDownItemSelected brandSelectionDropDown custom_brandSelectionDropDown hide">
+                                <span class="irRadio VISAImg custom_VISAImg" value="VISAContainer">
+                                    <em class="custom_VISAImg">V</em>
+                                </span>
+                        VISA
+                    </div>
+                </div>
+            </div>
+            <div id="brandDropDownContainer" class="brandDropDownContainer custom_brandDropDownContainer hide">
+                <div id="dropDownvisaImg" class="dropDownItem tooltip custom_dropDownItem preselected" title="use   Visa
+  " value="visa">
+                            <span class="irRadio visaImg custom_visaImg" value="visa">
+                                <em class="custom_visaImg">V</em>
+                            </span> Visa
+                </div>
+                <div id="dropDownmasterImg" class="dropDownItem tooltip custom_dropDownItem " title="use   MasterCard
+  " value="master">
+                            <span class="irRadio masterImg custom_masterImg" value="master">
+                                <em class="custom_masterImg">V</em>
+                            </span> MasterCard
+                </div>
+                <div id="dropDownmaestroImg" class="dropDownItem tooltip custom_dropDownItem " title="use   Switch / Maestro
+  " value="maestro">
+                            <span class="irRadio maestroImg custom_maestroImg" value="maestro">
+                                <em class="custom_maestroImg">V</em>
+                            </span> Switch / Maestro
+                </div>
+                <div id="dropDownamexImg" class="dropDownItem tooltip custom_dropDownItem " title="use    American Express
+  " value="amex">
+                            <span class="irRadio amexImg custom_amexImg" value="amex">
+                                <em class="custom_amexImg">V</em>
+                            </span> American Express
+                </div>
+                <div class="dropDownItemClose tooltip right custom_dropDownItemClose " title="close list">
+                    <span class="dropDownItemCloseIcon custom_dropDownItemCloseIcon">close</span>
+                </div>
+            </div>
+            <div id="payInputContainer">
+                <!-- REVIEW #7666. hide current year in a hidden field to access it via javascript -->
+                <input type="hidden" id="currentYear" value="2019"/>
+                <div id="brandSelectionSimpleDropDown"
+                     class="brandSelectionSimpleDropDown custom_brandSelectionSimpleDropDown">
+                    <p class="grid_4 custom_labelColumn">
+                        <label class="custom_label">Card Type</label>
+                    </p>
+                    <!-- simple html drow down -->
+                    <p class="grid_8 omega custom_input">
+                        <select id="brandSelected" name="brandSelected" size="1">
+                            <option name="visa" value="1#visa" class="custom_option_visa                                             preselected
+" selected="selected"
+                            >
+                                Visa
+                            </option>
+                            <option name="master" value="2#master" class="custom_option_master ">
+                                MasterCard
+                            </option>
+                            <option name="maestro" value="3#maestro" class="custom_option_maestro ">
+                                Switch / Maestro
+                            </option>
+                            <option name="amex" value="4#amex" class="custom_option_amex ">
+                                American Express
+                            </option>
+                        </select>
+                    </p>
+                </div>
+                <div class="clear"></div>
+                <!-- non Js case -->
+                <noscript>
+                    <!-- hr class="grid_12 default_cardSeparator custom_cardSeparator"></hr -->
+                    <!-- nonjscontainer -->
+                    <!-- For profile update only, we need to display card number and holder -->
+                    <div id="nonjsContainer" class="clearfix brandContainer nonjsContainer custom_nonjsContainer
+
+    	">
+                        <input id="brandName" value="nonjs" type="hidden"/>
+                        <div class="custom_brandInputContainer">
+                            <input id="useJs" name="useJs" value="false" type="hidden"/>
+                            <div class="formFields cardNumber custom_nonjsCardNumber clearfix mandatory">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardNumber">
+                                        Card Number
+                                    </label>
+                                </p>
+                                <p class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+                Your card number is not valid.
+            </span>
+                                    <input title="" autocomplete="off"
+                                           class="tooltip maxWidth custom_maxWidth numeric luhncheck"
+                                           id="nonjscardNumber" name="nonjsAccountBuilder.number" type="tel"
+                                           maxlength="19"/>
+                                    <input type="hidden" value="nonjsAccountBuilder.number"/>
+                                </p>
+                            </div>
+                            <div class="formFields cardValidFrom custom_nonjsCardValidFrom clearfix ">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardValidFromMonth">
+                                        Start Date
+                                    </label>
+                                </p>
+                                <p class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+                Your start date is not valid.
+            </span>
+                                    <!-- REVIEW #7666. remove input fields by selects -->
+                                    <select id="nonjscardValidFromMonth" name="nonjsAccountBuilder.startMonth"
+                                            class="monthDropDown monthFromValidation" size="1">
+                                        <option>01</option>
+                                        <option selected>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <input type="hidden" value="nonjsAccountBuilder.startMonth"/>
+                                    /
+                                    <select id="nonjscardValidFromYear" name="nonjsAccountBuilder.startYear"
+                                            class="yearDropDown yearFromValidation" size="1">
+                                        <option>2009</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option selected>2019</option>
+                                    </select>
+                                    <input type="hidden" value="nonjsAccountBuilder.startYear"/>
+                                    <!--input id="nonjscardValidFromYear" class=" numeric yearFromValidation" name="nonjsAccountBuilder.startYear" type="text" size="4" maxlength="4"/-->
+                                    <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                                </p>
+                            </div>
+                            <div class="formFields cardValidTo custom_nonjsCardValidTo clearfix  mandatory">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardValidToMonth">
+                                        Expiry Date
+                                    </label>
+                                </p>
+                                <p class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+                Your expiry date is not valid.
+            </span>
+                                    <!-- REVIEW #7666. remove input fields by selects -->
+                                    <select id="nonjscardValidToMonth" name="nonjsAccountBuilder.expiryMonth"
+                                            class="monthDropDown monthToValidation" size="1">
+                                        <option>01</option>
+                                        <option selected>02</option>
+                                        <option>03</option>
+                                        <option>04</option>
+                                        <option>05</option>
+                                        <option>06</option>
+                                        <option>07</option>
+                                        <option>08</option>
+                                        <option>09</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                    <input type="hidden" value="nonjsAccountBuilder.expiryMonth"/>
+                                    /
+                                    <select id="nonjscardValidToYear" name="nonjsAccountBuilder.expiryYear"
+                                            class="yearDropDown yearToValidation" size="1">
+                                        <option selected>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                        <option>2031</option>
+                                        <option>2032</option>
+                                        <option>2033</option>
+                                        <option>2034</option>
+                                        <option>2035</option>
+                                        <option>2036</option>
+                                        <option>2037</option>
+                                        <option>2038</option>
+                                        <option>2039</option>
+                                        <option>2040</option>
+                                        <option>2041</option>
+                                        <option>2042</option>
+                                        <option>2043</option>
+                                        <option>2044</option>
+                                        <option>2045</option>
+                                        <option>2046</option>
+                                        <option>2047</option>
+                                        <option>2048</option>
+                                        <option>2049</option>
+                                    </select>
+                                    <input type="hidden" value="nonjsAccountBuilder.expiryYear"/>
+                                    <!--input id="nonjscardValidToYear" class=" numeric yearToValidation" name="nonjsAccountBuilder.expiryYear" type="text" size="4" maxlength="4"/-->
+                                    <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                                </p>
+                            </div>
+                            <!-- CON-503: For update transactions do not display Card Issue Number -->
+                            <div class="formFields cardIssueNumber custom_nonjsCardIssueNumber clearfix">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardIssueNumber">
+                                        Issue Number (if applicable)
+                                    </label>
+                                </p>
+                                <p class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+                Your issue number is not valid
+            </span>
+                                    <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth numeric"
+                                           id="nonjscardIssueNumber" name="nonjsAccountBuilder.cardIssueNumber"
+                                           type="tel" size="2" maxlength="2"/>
+                                    <input type="hidden" value="nonjsAccountBuilder.cardIssueNumber"/>
+                                </p>
+                            </div>
+                            <div class="formFields cardName custom_nonjsCardName clearfix">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardName">
+                                        Name on card
+                                    </label>
+                                </p>
+                                <p class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+
+            </span>
+                                    <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth "
+                                           id="nonjscardName" name="nonjsAccountBuilder.holder" type="text"/>
+                                    <input type="hidden" value="nonjsAccountBuilder.holder"/>
+                                </p>
+                            </div>
+                            <div class="formFields cardCvv custom_nonjsCardVerification clearfix ">
+                                <p class="grid_4 custom_labelColumn">
+                                    <label class="custom_label" for="nonjscardCvv">
+                                                <span class="linkSurround help">
+                            Verification code
+                        </span>
+                                    </label>
+                                </p>
+                                <div class="grid_8 omega custom_input">
+                                            <span class="grid_12 notification custom_notification hide">
+                        Your card security number is not valid. Please re-try.
+                    </span>
+                                    <input title="" autocomplete="off" class="tooltip numeric cvv4 cvv"
+                                           id="nonjscardCvv" name="nonjsAccountBuilder.verification" type="tel"
+                                           maxlength="4" size="4"/>
+                                    <input type="hidden" value="nonjsAccountBuilder.verification"/>
+                                    <span class="ir info custom_info tooltip hide" title="">
+                                                <em class="custom_info" title="nonjsCvvDialogPopup"></em>
+                                            </span>
+                                    <div id="nonjsCvvDialogPopup" class="dialog hide"
+                                         title="Where is the verfication code?">
+                                        <p class="dialogDescription custom_dialogDescription">
+                                            You will find the verification code on the back of your card.
+                                        </p>
+                                        <span class="ir nonjsCvvDialog custom_nonjsCvvDialog">
+                                                    <em class="custom_image">
+                                 Where is the verfication code?
+                            </em>
+                                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </br>
+
+
+                </noscript>
+                <!-- hr class="grid_12 default_cardSeparator custom_cardSeparator"></hr -->
+                <!-- VISAcontainer -->
+                <!-- For profile update only, we need to display card number and holder -->
+                <div id="visaContainer" class="clearfix brandContainer visaContainer custom_visaContainer
+    	 preselected
+    	 hide">
+                    <input id="brandName" value="visa" type="hidden"/>
+                    <div class="custom_brandInputContainer">
+                        <div class="formFields cardNumber custom_visaCardNumber clearfix mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="visacardNumber">
+                                    Card Number
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your card number is not valid.
+            </span>
+                                <input title="" autocomplete="off"
+                                       class="tooltip maxWidth custom_maxWidth numeric luhncheck" id="visacardNumber"
+                                       name="visaAccountBuilder.number" type="tel" maxlength="19"/>
+                                <input type="hidden" value="visaAccountBuilder.number"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardValidTo custom_visaCardValidTo clearfix  mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="visacardValidToMonth">
+                                    Expiry Date
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your expiry date is not valid.
+            </span>
+                                <!-- REVIEW #7666. remove input fields by selects -->
+                                <select id="visacardValidToMonth" name="visaAccountBuilder.expiryMonth"
+                                        class="monthDropDown monthToValidation" size="1">
+                                    <option>01</option>
+                                    <option selected>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="hidden" value="visaAccountBuilder.expiryMonth"/>
+                                /
+                                <select id="visacardValidToYear" name="visaAccountBuilder.expiryYear"
+                                        class="yearDropDown yearToValidation" size="1">
+                                    <option selected>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                    <option>2045</option>
+                                    <option>2046</option>
+                                    <option>2047</option>
+                                    <option>2048</option>
+                                    <option>2049</option>
+                                </select>
+                                <input type="hidden" value="visaAccountBuilder.expiryYear"/>
+                                <!--input id="visacardValidToYear" class=" numeric yearToValidation" name="visaAccountBuilder.expiryYear" type="text" size="4" maxlength="4"/-->
+                                <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                            </p>
+                        </div>
+                        <!-- CON-503: For update transactions do not display Card Issue Number -->
+                        <div class="formFields cardName custom_visaCardName clearfix">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="visacardName">
+                                    Name on card
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+
+            </span>
+                                <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth "
+                                       id="visacardName" name="visaAccountBuilder.holder" type="text"/>
+                                <input type="hidden" value="visaAccountBuilder.holder"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardCvv custom_visaCardVerification clearfix ">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="visacardCvv">
+                                            <span class="linkSurround help">
+                            CVV2 Number
+                        </span>
+                                </label>
+                            </p>
+                            <div class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                        Your card security number is not valid. Please re-try.
+                    </span>
+                                <input title="" autocomplete="off" class="tooltip numeric cvv3 cvv" id="visacardCvv"
+                                       name="visaAccountBuilder.verification" type="tel" maxlength="3" size="3"/>
+                                <input type="hidden" value="visaAccountBuilder.verification"/>
+                                <span class="ir info custom_info tooltip hide" title="">
+                                            <em class="custom_info" title="visaCvvDialogPopup"></em>
+                                        </span>
+                                <div id="visaCvvDialogPopup" class="dialog hide" title="Where is CVV2?">
+                                    <p class="dialogDescription custom_dialogDescription">
+                                        You will find the CVV2 on the back of your card.
+                                    </p>
+                                    <span class="ir visaCvvDialog custom_visaCvvDialog">
+                                                <em class="custom_image">
+                                 Where is CVV2?
+                            </em>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hr class="grid_12 default_cardSeparator custom_cardSeparator"></hr -->
+                <!-- MASTERcontainer -->
+                <!-- For profile update only, we need to display card number and holder -->
+                <div id="masterContainer" class="clearfix brandContainer masterContainer custom_masterContainer
+
+    	 hide">
+                    <input id="brandName" value="master" type="hidden"/>
+                    <div class="custom_brandInputContainer">
+                        <div class="formFields cardNumber custom_masterCardNumber clearfix mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="mastercardNumber">
+                                    Card Number
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your card number is not valid.
+            </span>
+                                <input title="" autocomplete="off"
+                                       class="tooltip maxWidth custom_maxWidth numeric luhncheck" id="mastercardNumber"
+                                       name="masterAccountBuilder.number" type="tel" maxlength="19"/>
+                                <input type="hidden" value="masterAccountBuilder.number"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardValidTo custom_masterCardValidTo clearfix  mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="mastercardValidToMonth">
+                                    Expiry Date
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your expiry date is not valid.
+            </span>
+                                <!-- REVIEW #7666. remove input fields by selects -->
+                                <select id="mastercardValidToMonth" name="masterAccountBuilder.expiryMonth"
+                                        class="monthDropDown monthToValidation" size="1">
+                                    <option>01</option>
+                                    <option selected>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="hidden" value="masterAccountBuilder.expiryMonth"/>
+                                /
+                                <select id="mastercardValidToYear" name="masterAccountBuilder.expiryYear"
+                                        class="yearDropDown yearToValidation" size="1">
+                                    <option selected>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                    <option>2045</option>
+                                    <option>2046</option>
+                                    <option>2047</option>
+                                    <option>2048</option>
+                                    <option>2049</option>
+                                </select>
+                                <input type="hidden" value="masterAccountBuilder.expiryYear"/>
+                                <!--input id="mastercardValidToYear" class=" numeric yearToValidation" name="masterAccountBuilder.expiryYear" type="text" size="4" maxlength="4"/-->
+                                <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                            </p>
+                        </div>
+                        <!-- CON-503: For update transactions do not display Card Issue Number -->
+                        <div class="formFields cardName custom_masterCardName clearfix">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="mastercardName">
+                                    Name on card
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+
+            </span>
+                                <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth "
+                                       id="mastercardName" name="masterAccountBuilder.holder" type="text"/>
+                                <input type="hidden" value="masterAccountBuilder.holder"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardCvv custom_masterCardVerification clearfix ">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="mastercardCvv">
+                                            <span class="linkSurround help">
+                            CVC2 Number
+                        </span>
+                                </label>
+                            </p>
+                            <div class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                        Your card security number is not valid. Please re-try.
+                    </span>
+                                <input title="" autocomplete="off" class="tooltip numeric cvv3 cvv" id="mastercardCvv"
+                                       name="masterAccountBuilder.verification" type="tel" maxlength="3" size="3"/>
+                                <input type="hidden" value="masterAccountBuilder.verification"/>
+                                <span class="ir info custom_info tooltip hide" title="">
+                                            <em class="custom_info" title="masterCvvDialogPopup"></em>
+                                        </span>
+                                <div id="masterCvvDialogPopup" class="dialog hide" title="Where is CVC2?">
+                                    <p class="dialogDescription custom_dialogDescription">
+                                        You will find the CVC2 on the back of your card.
+                                    </p>
+                                    <span class="ir masterCvvDialog custom_masterCvvDialog">
+                                                <em class="custom_image">
+                                 Where is CVC2?
+                            </em>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hr class="grid_12 default_cardSeparator custom_cardSeparator"></hr -->
+                <!-- MAESTROcontainer -->
+                <!-- For profile update only, we need to display card number and holder -->
+                <div id="maestroContainer" class="clearfix brandContainer maestroContainer custom_maestroContainer
+
+    	 hide">
+                    <input id="brandName" value="maestro" type="hidden"/>
+                    <div class="custom_brandInputContainer">
+                        <div class="formFields cardNumber custom_maestroCardNumber clearfix mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardNumber">
+                                    Card Number
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your card number is not valid.
+            </span>
+                                <input title="" autocomplete="off"
+                                       class="tooltip maxWidth custom_maxWidth numeric luhncheck" id="maestrocardNumber"
+                                       name="maestroAccountBuilder.number" type="tel" maxlength="19"/>
+                                <input type="hidden" value="maestroAccountBuilder.number"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardValidFrom custom_maestroCardValidFrom clearfix ">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardValidFromMonth">
+                                    Start Date
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your start date is not valid.
+            </span>
+                                <!-- REVIEW #7666. remove input fields by selects -->
+                                <select id="maestrocardValidFromMonth" name="maestroAccountBuilder.startMonth"
+                                        class="monthDropDown monthFromValidation" size="1">
+                                    <option>01</option>
+                                    <option selected>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="hidden" value="maestroAccountBuilder.startMonth"/>
+                                /
+                                <select id="maestrocardValidFromYear" name="maestroAccountBuilder.startYear"
+                                        class="yearDropDown yearFromValidation" size="1">
+                                    <option>2009</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option selected>2019</option>
+                                </select>
+                                <input type="hidden" value="maestroAccountBuilder.startYear"/>
+                                <!--input id="maestrocardValidFromYear" class=" numeric yearFromValidation" name="maestroAccountBuilder.startYear" type="text" size="4" maxlength="4"/-->
+                                <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                            </p>
+                        </div>
+                        <div class="formFields cardValidTo custom_maestroCardValidTo clearfix  mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardValidToMonth">
+                                    Expiry Date
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your expiry date is not valid.
+            </span>
+                                <!-- REVIEW #7666. remove input fields by selects -->
+                                <select id="maestrocardValidToMonth" name="maestroAccountBuilder.expiryMonth"
+                                        class="monthDropDown monthToValidation" size="1">
+                                    <option>01</option>
+                                    <option selected>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="hidden" value="maestroAccountBuilder.expiryMonth"/>
+                                /
+                                <select id="maestrocardValidToYear" name="maestroAccountBuilder.expiryYear"
+                                        class="yearDropDown yearToValidation" size="1">
+                                    <option selected>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                    <option>2045</option>
+                                    <option>2046</option>
+                                    <option>2047</option>
+                                    <option>2048</option>
+                                    <option>2049</option>
+                                </select>
+                                <input type="hidden" value="maestroAccountBuilder.expiryYear"/>
+                                <!--input id="maestrocardValidToYear" class=" numeric yearToValidation" name="maestroAccountBuilder.expiryYear" type="text" size="4" maxlength="4"/-->
+                                <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                            </p>
+                        </div>
+                        <!-- CON-503: For update transactions do not display Card Issue Number -->
+                        <div class="formFields cardIssueNumber custom_maestroCardIssueNumber clearfix">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardIssueNumber">
+                                    Issue Number (if applicable)
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your issue number is not valid
+            </span>
+                                <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth numeric"
+                                       id="maestrocardIssueNumber" name="maestroAccountBuilder.cardIssueNumber"
+                                       type="tel" size="2" maxlength="2"/>
+                                <input type="hidden" value="maestroAccountBuilder.cardIssueNumber"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardName custom_maestroCardName clearfix">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardName">
+                                    Name on card
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+
+            </span>
+                                <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth "
+                                       id="maestrocardName" name="maestroAccountBuilder.holder" type="text"/>
+                                <input type="hidden" value="maestroAccountBuilder.holder"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardCvv custom_maestroCardVerification clearfix ">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="maestrocardCvv">
+                                            <span class="linkSurround help">
+                            CVV Number
+                        </span>
+                                </label>
+                            </p>
+                            <div class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                        Your card security number is not valid. Please re-try.
+                    </span>
+                                <input title="" autocomplete="off" class="tooltip numeric cvv3 cvv" id="maestrocardCvv"
+                                       name="maestroAccountBuilder.verification" type="tel" maxlength="3" size="3"/>
+                                <input type="hidden" value="maestroAccountBuilder.verification"/>
+                                <span class="ir info custom_info tooltip hide" title="">
+                                            <em class="custom_info" title="maestroCvvDialogPopup"></em>
+                                        </span>
+                                <div id="maestroCvvDialogPopup" class="dialog hide" title="Where is CVV?">
+                                    <p class="dialogDescription custom_dialogDescription">
+                                        You will find the CVV on the back of your card.
+                                    </p>
+                                    <span class="ir maestroCvvDialog custom_maestroCvvDialog">
+                                                <em class="custom_image">
+                                 Where is CVV?
+                            </em>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hr class="grid_12 default_cardSeparator custom_cardSeparator"></hr -->
+                <!-- AMEXcontainer -->
+                <!-- For profile update only, we need to display card number and holder -->
+                <div id="amexContainer" class="clearfix brandContainer amexContainer custom_amexContainer
+
+    	 hide">
+                    <input id="brandName" value="amex" type="hidden"/>
+                    <div class="custom_brandInputContainer">
+                        <div class="formFields cardNumber custom_amexCardNumber clearfix mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="amexcardNumber">
+                                    Card Number
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your card number is not valid.
+            </span>
+                                <input title="" autocomplete="off"
+                                       class="tooltip maxWidth custom_maxWidth numeric luhncheck" id="amexcardNumber"
+                                       name="amexAccountBuilder.number" type="tel" maxlength="19"/>
+                                <input type="hidden" value="amexAccountBuilder.number"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardValidTo custom_amexCardValidTo clearfix  mandatory">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="amexcardValidToMonth">
+                                    Expiry Date
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                Your expiry date is not valid.
+            </span>
+                                <!-- REVIEW #7666. remove input fields by selects -->
+                                <select id="amexcardValidToMonth" name="amexAccountBuilder.expiryMonth"
+                                        class="monthDropDown monthToValidation" size="1">
+                                    <option>01</option>
+                                    <option selected>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                                <input type="hidden" value="amexAccountBuilder.expiryMonth"/>
+                                /
+                                <select id="amexcardValidToYear" name="amexAccountBuilder.expiryYear"
+                                        class="yearDropDown yearToValidation" size="1">
+                                    <option selected>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                    <option>2045</option>
+                                    <option>2046</option>
+                                    <option>2047</option>
+                                    <option>2048</option>
+                                    <option>2049</option>
+                                </select>
+                                <input type="hidden" value="amexAccountBuilder.expiryYear"/>
+                                <!--input id="amexcardValidToYear" class=" numeric yearToValidation" name="amexAccountBuilder.expiryYear" type="text" size="4" maxlength="4"/-->
+                                <span class="help" title="month/year e.g 01/2010 ">mm / yyyy</span>
+                            </p>
+                        </div>
+                        <!-- CON-503: For update transactions do not display Card Issue Number -->
+                        <div class="formFields cardName custom_amexCardName clearfix">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="amexcardName">
+                                    Name on card
+                                </label>
+                            </p>
+                            <p class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+
+            </span>
+                                <input title="" autocomplete="off" class="tooltip maxWidth custom_maxWidth "
+                                       id="amexcardName" name="amexAccountBuilder.holder" type="text"/>
+                                <input type="hidden" value="amexAccountBuilder.holder"/>
+                            </p>
+                        </div>
+                        <div class="formFields cardCvv custom_amexCardVerification clearfix ">
+                            <p class="grid_4 custom_labelColumn">
+                                <label class="custom_label" for="amexcardCvv">
+                                            <span class="linkSurround help">
+                            CID Number
+                        </span>
+                                </label>
+                            </p>
+                            <div class="grid_8 omega custom_input">
+                                        <span class="grid_12 notification custom_notification hide">
+                        Your card security number is not valid. Please re-try.
+                    </span>
+                                <input title="" autocomplete="off" class="tooltip numeric cvv4 cvv" id="amexcardCvv"
+                                       name="amexAccountBuilder.verification" type="tel" maxlength="4" size="4"/>
+                                <input type="hidden" value="amexAccountBuilder.verification"/>
+                                <span class="ir info custom_info tooltip hide" title="">
+                                            <em class="custom_info" title="amexCvvDialogPopup"></em>
+                                        </span>
+                                <div id="amexCvvDialogPopup" class="dialog hide" title="Where is CID?">
+                                    <p class="dialogDescription custom_dialogDescription">
+                                        You will find the CID on the front of your card.
+                                    </p>
+                                    <span class="ir amexCvvDialog custom_amexCvvDialog">
+                                                <em class="custom_image">
+                                 Where is CID?
+                            </em>
+                                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hide">
+            <input name="token" type="text"
+                   value="236754862-20190207141648-3581BF1CE4A514D8E3B12E4F4B598279.uat01-vm-hpp01"/>
+        </div>
+        <div id="paymentButtons" class="grid_12 right custom_paymentButtons">
+            <input type="submit" id="submitButton" class="submitButton custom_submitButton" name="submitButton"
+                   value="Submit"/>
+            <span id="submitDialog" class="dialog hide">
+                        <p>Sorry, some of the values you entered appear incorrect.Please check the field(s) in red and re-enter.</p>
+                    </span>
+            <div id="waitingDialog" class="dialog hide">Please wait...</div>
+            <input type="hidden" id="timeoutRedirection" value="1110"/>
+        </div>
+    </form>
+    <span class="custom_showInputInfo hide"></span>
+    <span class="custom_activateFieldValidation hide"></span>
+    <span class="custom_showTooltip hide"></span>
+    <span class="custom_choosePaymentSelection hide"></span>
+</div>
+<script type="text/javascript" src="https://test.ppipe.net/hpp/resource/js/hpp.js"></script>
+</body>
+</html>
