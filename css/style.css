@@ -502,3 +502,6 @@ select {
 
 .custom_ui-icon-closethick {
   background: none; }
+
+.custom_orderAmount {
+   display: none; }
