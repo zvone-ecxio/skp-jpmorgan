@@ -383,6 +383,7 @@ select {
   margin-bottom: 39px;
   border-bottom: 2px solid #000; }
   .custom_paySelection p.custom_labelColumn {
+    display: none;
     padding: 4px; }
     @media (max-width: 767.98px) {
       .custom_paySelection p.custom_labelColumn {
@@ -502,6 +503,3 @@ select {
 
 .custom_ui-icon-closethick {
   background: none; }
-
-.custom_orderAmount {
-   display: none; }
