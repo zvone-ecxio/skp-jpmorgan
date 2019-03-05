@@ -1,14 +1,14 @@
 @font-face {
-  font-family: "TradeGothicLTStd";
+  font-family: "Trade Gothic LT Std";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.otf") format("opentype"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.eot?") format("eot"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.ttf") format("truetype"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.woff") format("woff"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.woff2") format("woff2"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.svg#TradeGothicLTStd") format("svg"); }
+  src: url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.eot?") format("eot"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.ttf") format("truetype"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.woff") format("woff"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.woff2") format("woff2"), url("../fonts/TradeGothic/TradeGothicLTStd/TradeGothicLTStd.svg#Trade_Gothic_LT_Std") format("svg"); }
 
 @font-face {
-  font-family: "TradeGothicLTStd";
+  font-family: "Trade Gothic LT Std";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.otf") format("opentype"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.eot?") format("eot"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.ttf") format("truetype"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.woff") format("woff"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.woff2") format("woff2"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.svg#TradeGothicLTStd") format("svg"); }
+  src: url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.eot?") format("eot"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.ttf") format("truetype"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.woff") format("woff"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.woff2") format("woff2"), url("../fonts/TradeGothic/TradeGothicLTStd-Bd2/TradeGothicLTStd-Bd2.svg#Trade_Gothic_LT_Std") format("svg"); }
 
 @font-face {
   font-family: 'iconfont';
@@ -199,7 +199,7 @@
 
 .custom_body {
   background-color: #fff;
-  font-family: "TradeGothicLTStd", "TradeGothicLTStd-Bd2", "TradeGothicLTStd-Light", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: "Trade Gothic LT Std", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .custom_billingAddressHeader,
 .custom_contactDetailsHeader,
@@ -216,7 +216,7 @@
   .custom_input:not(#xyz) {
     margin-bottom: 4px; }
   .custom_input input {
-    font-family: 'TradeGothicLTStd', 'TradeGothicLTStd-Bd2', 'TradeGothicLTStd-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+    font-family: 'Trade Gothic LT Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
     .custom_input input:not([type='hidden']) {
       display: block;
       border: 0;
@@ -237,7 +237,7 @@ select {
   width: 100%;
   height: 39px;
   line-height: 27px;
-  font-family: 'TradeGothicLTStd', 'TradeGothicLTStd-Bd2', 'TradeGothicLTStd-Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Trade Gothic LT Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 18px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -270,7 +270,10 @@ select {
     font-family: iconfont;
     content: '\e933'; }
 
-.custom_visaCardVerification input:not([type='hidden']) {
+.custom_visaCardVerification input:not([type='hidden']),
+.custom_masterCardVerification input:not([type='hidden']),
+.custom_maestroCardVerification input:not([type='hidden']),
+.custom_amexCardVerification input:not([type='hidden']) {
   padding-left: 32px; }
 
 .custom_paymentButtons input.custom_submitButton {
