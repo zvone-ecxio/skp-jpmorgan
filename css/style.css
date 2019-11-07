@@ -376,6 +376,19 @@ select {
 .custom_maxWidth {
   width: 100%; }
 
+.custom_body {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 650px; }
+
+.custom_customerDetails {
+  background-image: url("https://dm.henkel-dam.com/is/content/henkel/521-skp_logo?scl=1&qlt=100&fmt=png-alpha");
+  background-repeat: no-repeat;
+  background-size: 120px 56px;
+  padding-top: 60px; }
+
 .custom_visaContainer,
 .custom_masterContainer,
 .custom_maestroContainer,
